@@ -55,16 +55,16 @@
   <ItemGroup>
      <Compile Include="Assets\buttonEvents.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>Z:/SA-Sudel/GitHubGebastel/TestUI/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>Z:/SA-Sudel/GitHubGebastel/hello-world/TestUI/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>Z:/SA-Sudel/GitHubGebastel/TestUI/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>Z:/SA-Sudel/GitHubGebastel/hello-world/TestUI/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>Z:/SA-Sudel/GitHubGebastel/TestUI/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>Z:/SA-Sudel/GitHubGebastel/hello-world/TestUI/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>Z:/SA-Sudel/GitHubGebastel/TestUI/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>Z:/SA-Sudel/GitHubGebastel/hello-world/TestUI/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
