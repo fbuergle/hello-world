@@ -27,16 +27,19 @@ public class buttonClick : MonoBehaviour {
         //Calls the TaskOnClick/TaskWithParameters method when you click the Button
         btn1.onClick.AddListener(TaskOnClick);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-		//from https://docs.unity3d.com/ScriptReference/Vector3.MoveTowards.html
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        //from https://docs.unity3d.com/ScriptReference/Vector3.MoveTowards.html
         // The step size is equal to speed times frame time.
         float step = Time.deltaTime;
 
-        // Move our position a step closer to the target.
-        myCube.transform.position = Vector3.MoveTowards(myCube.transform.position, target.position, step);
+        if (myCube == true) { 
+            // Move our position a step closer to the target.
+            myCube.transform.position = Vector3.MoveTowards(myCube.transform.position, target.position, step);
+        }
     
 	}
 
