@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="TestGreiferImport"/>
+</Tracking>
+
+<Assembly name="TestGreiferImports_assembly">
+<Part name="TestGreiferImport" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="-0.000159981 -0.144855 0.213188" rotation="AD: 0.9999999999999996 -0.0004978360542290133 0.00006458036997743315 165.217">
+
+</EntryPoint>
+
+</Assembly>
+</QCARConfig>
