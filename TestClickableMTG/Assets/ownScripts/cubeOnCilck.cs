@@ -32,7 +32,7 @@ public class cubeOnCilck : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        textbox.text += " Hello";
+        //textbox.text += " Hello";
         currentMaterial = material1;
     }
 	
