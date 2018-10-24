@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class partClickevent : MonoBehaviour {
 
-    //The cube which shall be clickable
+    //The component which shall be clickable
     public GameObject myComponent;
     public Material material1;
     public Material material2;
@@ -22,8 +22,8 @@ public class partClickevent : MonoBehaviour {
     void Start()
     {
         textbox.text += "myComponent says Hello";
-
-        currentMaterial = material1;
+        //Initially set the current material to material2 (hoping default set ist material1)
+        currentMaterial = material2;
 
     }
 
@@ -37,12 +37,15 @@ public class partClickevent : MonoBehaviour {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
-                textbox.text = "myComponent was clicked with MouseDown" + counter;
-                counter++;
+                if (hit.transform.name == myComponent.name)
+                {
+                    textbox.text = myComponent.name + " (myComponent) was clicked with MouseDown" + counter;
+                    counter++;
 
-                myComponent.GetComponent<Renderer>().material = currentMaterial;
-                //Change currentMaterial to the other one (not the one that currently is the currentMaterial)
-                currentMaterial = (currentMaterial == material1) ? material2 : material1;
+                    myComponent.GetComponent<Renderer>().material = currentMaterial;
+                    //Change currentMaterial to the other one (not the one that currently is the currentMaterial)
+                    currentMaterial = (currentMaterial == material1) ? material2 : material1;
+                }
             }
         }
     }

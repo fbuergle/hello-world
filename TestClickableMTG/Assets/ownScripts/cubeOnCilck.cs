@@ -17,7 +17,7 @@ public class cubeOnCilck : MonoBehaviour {
     //public GameObject textbox;
     public Text textbox;
     private int counter = 1;
-    private Material currentMaterial;
+    private Material currentMaterialCube;
 
     void createCube(float pos_x, float pos_y)
     {
@@ -33,7 +33,7 @@ public class cubeOnCilck : MonoBehaviour {
     // Use this for initialization
     void Start () {
         //textbox.text += " Hello";
-        currentMaterial = material1;
+        currentMaterialCube = material1;
     }
 	
 	// Update is called once per frame
@@ -81,18 +81,21 @@ public class cubeOnCilck : MonoBehaviour {
             textbox.text = "MouseDown";
             if (Physics.Raycast(ray, out hit))
             {
-                textbox.text = "Cube was clicked withMouseDown" + counter;
-                counter++;
-                myCube.GetComponent<Renderer>().material = currentMaterial;
-                currentMaterial = (currentMaterial == material1) ? material2 : material1;
-                /*if (GetComponent<Renderer>().material != material1)
+                if (hit.transform.name == myCube.name)
                 {
-                    GetComponent<Renderer>().material = material1;
+                    textbox.text = "Cube was clicked withMouseDown" + counter;
+                    counter++;
+                    myCube.GetComponent<Renderer>().material = currentMaterialCube;
+                    currentMaterialCube = (currentMaterialCube == material1) ? material2 : material1;
+                    /*if (GetComponent<Renderer>().material != material1)
+                    {
+                        GetComponent<Renderer>().material = material1;
+                    }
+                    else
+                    {
+                        GetComponent<Renderer>().material = material2;
+                    }*/
                 }
-                else
-                {
-                    GetComponent<Renderer>().material = material2;
-                }*/
             }
         }
 

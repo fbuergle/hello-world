@@ -63,7 +63,8 @@
   <ItemGroup>
     <Compile Include="Assets\ownScripts\cubeOnCilck.cs" />
     <Compile Include="Assets\ownScripts\partClickevent.cs" />
-    <Compile Include="Assets\ownScripts\virtualModelActions.cs" />
+    <Compile Include="Assets\ownScripts\Unused\click1Actions.cs" />
+    <Compile Include="Assets\ownScripts\Unused\virtualModelActions.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\StreamingAssets\Vuforia\TestGreiferImport.xml" />
